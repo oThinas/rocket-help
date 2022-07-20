@@ -2,7 +2,7 @@
 import { NativeBaseProvider, StatusBar } from 'native-base'
 
 // Import de componentes e telas
-import { SignIn } from './src/screens/SignIn';
+import { Routes } from './src/routes';
 import { Loading } from './src/components/Loading';
 
 // Import de estilizações
@@ -19,7 +19,7 @@ export default function App() {
         backgroundColor='transparent'
         translucent
       />
-      {fontsLoaded ? <SignIn /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </NativeBaseProvider>
   );
 }
