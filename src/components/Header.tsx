@@ -22,10 +22,21 @@ export function Header({ title, ...rest }: Props) {
       alignItems='center'
       bg='gray.600'
       pb={6}
-      pt={12}
+      pt={4}
       {...rest}
     >
-      <IconButton 
+      <Heading
+        color='gray.100'
+        textAlign='center'
+        fontSize='lg'
+        flex={1}
+        mt={10}
+      >
+        {title}
+      </Heading>
+      <IconButton
+        top={12}
+        position='absolute'
         icon={<CaretLeft 
                 color={colors.gray[200]}
                 size={24}
@@ -33,15 +44,6 @@ export function Header({ title, ...rest }: Props) {
         bg='gray.600'
         onPress={handleGoBack}
       />
-      <Heading
-        color='gray.100'
-        textAlign='center'
-        fontSize='lg'
-        flex={1}
-        ml={-6}
-      >
-        {title}
-      </Heading>
     </HStack>
   );
 }

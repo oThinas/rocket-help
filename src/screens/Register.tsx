@@ -11,7 +11,7 @@ export function Register() {
       p={6}
       bg='gray.600'
     >
-      <Header title='Solicitação'/>
+      <Header title='Nova solicitação'/>
       <Input 
         placeholder='Número do patrimônio'
         mt={4}
