@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Alert } from 'react-native'
+import auth from '@react-native-firebase/auth'
 import { VStack, Heading, Icon, useTheme } from 'native-base'
 
 import { Input } from '../components/Input'
@@ -12,6 +14,13 @@ export function SignIn() {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+
+  function handleSignIn() {
+    if (!email || !password) 
+      return Alert.alert('Erro ao entrar', 'Informe e-mail e senha')
+    
+    console.log(email, password)
+  }
   
   return(
     <VStack
@@ -64,6 +73,7 @@ export function SignIn() {
       <Button 
         title='Entrar'
         w='full'
+        onPress={handleSignIn}
       />
     </VStack>
   )

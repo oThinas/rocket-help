@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "455972200795",
+    "project_id": "rockethelp-thinas",
+    "storage_bucket": "rockethelp-thinas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455972200795:android:11604e176f0ae8963fba7e",
+        "android_client_info": {
+          "package_name": "com.rockethelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455972200795-1q4sfr0bs176hqu9gi627bc7jsnm1jlm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYSkBrDDFuvK_C5YyRN0BRVR-Yq52MJKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455972200795-1q4sfr0bs176hqu9gi627bc7jsnm1jlm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
